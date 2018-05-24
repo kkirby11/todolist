@@ -2,5 +2,6 @@
 <p><%= link_to 'New Todo', new_todo_path %></p>
 <% @todos.each do |todo| %>
    <h2><%= todo.name%></h2>
-   <%= link_to 'Show Todo' , todo_path(todo) %>
+<%= link_to 'Show Todo' , todo_path(todo) %>
+<%= link_to 'Edit', edit_todo_path(todo) %>
 <% end %>
